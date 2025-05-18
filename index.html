@@ -10,15 +10,13 @@
   <body>
     <header class="header">
       <nav class="header__menu">
-        <!--<div class="header__menu-list">-->
-          <a class="menu-item">Главная</a>
+          <a class="header__menu-item menu-item-main">Главная</a>
           <div class="header__separator"></div>
-          <a class="menu-item" href="#0">Посмотреть лоты</a>
+          <a class="header__menu-item" href="#0">Посмотреть лоты</a>
           <div class="header__separator"></div>
-          <a class="menu-item" href="#0">Об аукционе</a>
-        <!--</div>-->
+          <a class="header__menu-item" href="#0">Об аукционе</a>
       </nav>
-      <a class="header__logo">
+      <a class="header__logo-link">
         <img
           class="header__img-logo img-logo"
           src="./images/logo-black.svg"
@@ -26,15 +24,19 @@
         />
       </a>
       <address class="header__address address">
-        <a href="tel:+99995555555">9 999 555 5555</a>
-        <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
+        <a class="header__address-a" href="tel:+99995555555">+9 999 555 5555</a>
+        <a class="header__address-a" href="mailto:info@sobaka.ge">info@sobaka.ge</a>
         <p>наб. Принсенграхт 263- 265, Амстердам</p>
       </address>
     </header>
     <main class="main">
       <div class="cover">
         <div class="cover__overlay">
-          <h1 class="cover__h1">ОНО ТЕБЕ НАДО</h1>
+          <h1 class="cover__h1">
+            <span class="cover__it">ОНО</span>
+            <span class="cover__you">ТЕБЕ</span>
+            <span class="cover__necessary">НАДО</span>
+          </h1>
           <div class="cover__description">
             <p class="cover__subline">
               Аукцион вещей, в которые никто не верил
@@ -132,7 +134,7 @@
     </main>
     <footer class="footer">
       <div class="footer__address address">
-        <a href="tel:+99995555555">9 999 555 5555</a>
+        <a href="tel:+99995555555">+9 999 555 5555</a>
         <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
         <p>наб. Принсенграхт 263- 265, Амстердам</p>
       </div>
