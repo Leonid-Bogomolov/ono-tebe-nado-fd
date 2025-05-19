@@ -7,18 +7,21 @@
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
   place-items: center;
-  padding: 95px 50px;
+  padding: 95px 48px 89px 50px;
 }
 
 .header__menu {
   display: flex;
-  gap: 14px;
+  justify-self: start;
+  gap: 12px;
   text-transform: lowercase;
   text-decoration: none;
+  margin-bottom: 7px;
 }
 
 .header__links-list-item {
   font-size: 18px;
+  letter-spacing: 0.2px;
   color: black;
   text-transform: lowercase;
   text-decoration: none;
@@ -42,15 +45,18 @@
                                  то браузер определит её значение display как block.
                                   Таким ссылкам можно свободно задать ширину, высоту, 
                                    а также padding-top и padding-bottom (или их логические аналоги). */
-  min-width: 130px;
-  height: 100px;
+  min-width: 136px;
+  height: 110px;
 }
 
 .address {
   font-size: 18px;
   font-style: normal;
-  width: 200px;
+  line-height: 24.3px;
+  width: 235px;
   justify-self: end;
+  margin-right: 7px;
+  margin-bottom: 6px;
 }
 
 .address-link {
@@ -65,6 +71,8 @@
 .cover {
   position: relative;
   background-image: url(../images/cover.jpg);
+  background-position: center;
+  background-size: cover;
   margin-bottom: 120px;
 }
 
@@ -86,31 +94,25 @@
   display: flex;
   flex-direction: column;
   line-height: 115%;
-  letter-spacing: 0.35em;
+  letter-spacing: 0.3em;
+  margin-top: 2px;
   margin-bottom: 106px;
 }
 
 .aligned-text {
   display: inline-block;
-  /*align-self: flex-start;*/ /* По умолчанию */
 }
 
 .aligned-text_center {
   display: inline-block;
   align-self: center;
-}
-
-.cover__title-center {
-  margin: 20px 0;
+  margin: 20px 0 20px 30px;
 }
 
 .aligned-text_right {
   display: inline-block;
   align-self: flex-end;
-}
-
-.cover__title-right {
-  margin-right: -0.35em;
+  margin-right: -0.3em;
 }
 
 .cover__description {
@@ -124,8 +126,8 @@
   color: white;
   line-height: 28px;
   text-transform: uppercase;
-  letter-spacing: 0.053em;
-  word-spacing: 0.5em;
+  letter-spacing: 0em;
+  word-spacing: 0.84em;
 }
 
 .cover__bet-button {
@@ -155,7 +157,7 @@
   /*gap: 2.18%;*/
   flex-wrap: wrap;
   list-style: none;
-  margin-bottom: 2.9%;
+  margin-bottom: 2.78%;
 }
 
 .lots__card-list-item {
@@ -222,6 +224,10 @@
   gap: 24px;
 }
 
+.footer__address {
+  width: 260px;
+}
+
 .about-logo {
   padding: 35px 0 0 47px;
 }
@@ -244,7 +250,8 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding-top: 98px;
+  /*padding-right: 30px;*/
+  padding-top: 135px;
 }
 
 .about__title {
@@ -254,6 +261,11 @@
 
 .about__annotation {
   font-size: 20px;
+  line-height: 24.5px;
+}
+
+.annotation-one {
+  padding-right: 30px
 }
 
 .footer {
@@ -265,10 +277,18 @@
 .footer__menu-list {
   list-style: none;
   text-align: center;
+  margin-right: 27px;
 }
 
 .footer__menu-link {
   font-size: 18px;
+  line-height: 21px;
+  text-decoration: none;
+  border-bottom: 1px solid black;
+}
+
+.footer__menu-link_active {
+  border: none;
 }
 
 .footer__social-list {
