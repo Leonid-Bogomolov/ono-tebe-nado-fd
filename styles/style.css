@@ -1,6 +1,6 @@
 /* место для вашего кода */
-@import "./global.css";
 @import "../fonts/fonts.css";
+@import "./global.css";
 
 .header {
   display: grid;
@@ -74,7 +74,7 @@
   padding: 165px 50px 50px;
 }
 
-.overlay {  
+.overlay {
   height: 100%;
   background-color: rgb(0 0 0 / 0.6);
 }
@@ -86,7 +86,7 @@
   font-weight: bold;
   color: white;
   line-height: 115%;
-  letter-spacing: .35em;
+  letter-spacing: 0.35em;
   margin-bottom: 106px;
 }
 
@@ -110,7 +110,7 @@
 }
 
 .cover__title-right {
-  margin-right: -.35em;
+  margin-right: -0.35em;
 }
 
 .cover__description {
@@ -123,8 +123,8 @@
   font-size: 22px;
   line-height: 28px;
   text-transform: uppercase;
-  letter-spacing: .053em;
-  word-spacing: .5em;
+  letter-spacing: 0.053em;
+  word-spacing: 0.5em;
   color: white;
 }
 
