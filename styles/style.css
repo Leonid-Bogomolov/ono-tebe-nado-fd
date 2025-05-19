@@ -150,14 +150,17 @@
 
 .lots__card-list {
   display: flex;
-  justify-content: space-between;
-  gap: 2.18%;
+  justify-content: center;
+  gap: 25px;
+  /*gap: 2.18%;*/
+  flex-wrap: wrap;
   list-style: none;
   margin-bottom: 2.9%;
 }
 
 .lots__card-list-item {
-  width: 31.8%;
+  width: 334px;
+  /*min-width: 31.8%;*/
   min-height: 596px;
 }
 
