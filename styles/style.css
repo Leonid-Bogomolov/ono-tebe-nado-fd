@@ -47,6 +47,7 @@
                                    а также padding-top и padding-bottom (или их логические аналоги). */
   min-width: 136px;
   height: 110px;
+  cursor: pointer;
 }
 
 .address {
@@ -137,6 +138,7 @@
   height: 51px;
   border: 1px solid white;
   background-color: rgb(0 0 0 / 0);
+  cursor: pointer;
 }
 
 .section {
@@ -285,10 +287,12 @@
   line-height: 21px;
   text-decoration: none;
   border-bottom: 1px solid black;
+  cursor: pointer;
 }
 
 .footer__menu-link_active {
   border: none;
+  cursor: auto;
 }
 
 .footer__social-list {
@@ -300,4 +304,5 @@
 
 .footer__social-icon {
   width: 48px;
+  cursor: pointer;
 }
