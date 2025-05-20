@@ -30,7 +30,7 @@
 }
 
 .header__links-list-item_no-bullit {
-  list-style-type: none
+  list-style-type: none;
 }
 
 .header__link_active {
@@ -157,10 +157,11 @@
 
 .lots__card-list {
   display: flex;
-  justify-content: center;
+  justify-content: start;
   gap: 25px;
   /*gap: 2.18%;*/
   flex-wrap: wrap;
+  min-width: auto;
   list-style: none;
   margin-bottom: 2.78%;
 }
@@ -211,6 +212,10 @@
   font-size: 20px;
   color: white;
   line-height: 120%;
+}
+
+.double-dash {
+  letter-spacing: -3px;
 }
 
 .lots__look-more-link {
