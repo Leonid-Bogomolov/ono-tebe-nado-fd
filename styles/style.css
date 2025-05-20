@@ -1,43 +1,40 @@
-/* место для вашего кода */
-@import "../fonts/fonts.css";
-@import "./global.css";
-
 .header {
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
   place-items: center;
-  padding: 95px 48px 89px 50px;
+  padding: 95px 48px 92px 50px;
 }
 
 .header__menu {
-  display: flex;
   justify-self: start;
-  gap: 12px;
-  text-transform: lowercase;
-  text-decoration: none;
-  margin-bottom: 7px;
+  width: auto;
 }
 
-.header__links-list-item {
+.header__links-list {
+  display: flex;
+  justify-self: start;
+  gap: 30px;
   font-size: 18px;
   letter-spacing: 0.2px;
   color: black;
   text-transform: lowercase;
+  list-style-type: circle;
+  margin-bottom: 7px;
+}
+
+.header__link {
+  display: inline-block;
   text-decoration: none;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid currentColor;
+}
+
+.header__links-list-item_no-bullit {
+  list-style-type: none
 }
 
 .header__link_active {
   border: none;
-}
-
-.header__separator {
-  width: 6px;
-  height: 6px;
-  border: 1px solid black;
-  border-radius: 50%;
-  align-self: center;
 }
 
 .header__logo-link {
@@ -46,8 +43,12 @@
                                   Таким ссылкам можно свободно задать ширину, высоту, 
                                    а также padding-top и padding-bottom (или их логические аналоги). */
   min-width: 136px;
-  height: 110px;
+  /*height: 110px;*/ /* Высота определенна вложенным элементом */
   cursor: pointer;
+}
+
+.header__img-logo {
+  width: 100%;
 }
 
 .address {
@@ -77,10 +78,10 @@
   margin-bottom: 120px;
 }
 
-.cover__overlay {
+.cover__container {
   display: flex;
   flex-direction: column;
-  padding: 165px 50px 50px;
+  padding: 163px 50px 50px;
 }
 
 .overlay {
@@ -136,7 +137,9 @@
   color: white;
   width: 256px;
   height: 51px;
-  border: 1px solid white;
+  border: 1px solid currentColor; /* В качестве цвета удобно использовать currentColor,
+                                      потому что это ключевое слово автоматически наследует текущий цвет текста элемента.
+                                       Это уменьшает дублирование кода и упрощает поддержку стилей, особенно при работе с темами. */
   background-color: rgb(0 0 0 / 0);
   cursor: pointer;
 }
@@ -226,10 +229,6 @@
   gap: 24px;
 }
 
-.footer__address {
-  width: 260px;
-}
-
 .about-logo {
   padding: 35px 0 0 47px;
 }
@@ -266,7 +265,7 @@
   line-height: 24px;
 }
 
-.annotation-one {
+.correction {
   padding-right: 30px;
   margin-bottom: 24px;
 }
@@ -277,10 +276,15 @@
   padding: 60px 50px 80px;
 }
 
+.footer__address {
+  width: 260px;
+}
+
 .footer__menu-list {
   list-style: none;
   text-align: center;
   margin-right: 27px;
+  margin-top: 2px;
 }
 
 .footer__menu-link {
