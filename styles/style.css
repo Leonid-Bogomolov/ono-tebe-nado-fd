@@ -7,7 +7,7 @@
 
 .header__menu {
   justify-self: start;
-  width: auto;
+  /*width: auto;*/
 }
 
 .header__links-list {
