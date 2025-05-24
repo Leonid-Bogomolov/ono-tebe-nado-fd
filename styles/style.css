@@ -12,7 +12,6 @@
 
 .header__links-list {
   display: flex;
-  justify-self: start;
   gap: 30px;
   font-size: 18px;
   letter-spacing: 0.2px;
